@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!-- FOR PROJECT -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cart Item</title>
+    <link rel="stylesheet" href="project2.css">
+  </head>
+  <body>
+    <form action="thankyou.html" method="post">
+      <fieldset style = 'width: 60%;'>
+        <legend>CHECKOUT</legend>
+
+        <h3>Items in your bag</h3>
+        <span id="displayProducts"></span>
+        <script type="text/javascript">
+          let d = document.querySelector('#displayProducts');
+
+          let item1 = sessionStorage.getItem('productName');
+          let item2 = sessionStorage.getItem('productName2');
+          let item3 = sessionStorage.getItem('productName3');
+
+          let itemPrice = sessionStorage.getItem('productPrice');
+          let itemPrice2 = sessionStorage.getItem('productPrice2');
+          let itemPrice3 = sessionStorage.getItem('productPrice3');
+
+          var itemPrices = [];
+
+          if (item1 != null){
+            d.innerHTML += item1 + '.....$' + itemPrice;
+            itemPrices.push(itemPrice);
+          }
+          if (item2 != null){
+            d.innerHTML += '<br>' + item2 + '.....$' + itemPrice2;
+            itemPrices.push(itemPrice2);
+          }
+          if (item3 != null){
+            d.innerHTML += '<br>' + item3 + '.....$' + itemPrice3;
+            itemPrices.push(itemPrice3);
+          }
+
+          var subtotal = 0;
+
+          for(var i = 0; i < itemPrices.length; i++)
+          {
+            var num = parseFloat(itemPrices[i]);
+            subtotal += num;
+          }
+          var tax = subtotal * 0.08875;
+          var totalAmt = subtotal + tax;
+
+          d.innerHTML += '<hr>' + 'Subtotal = $' + subtotal.toFixed(2) + "<br>" + 'Tax = $' + tax.toFixed(2) + "<br>" + "Total Amount = $" + totalAmt.toFixed(2) + "<br><br>";
+
+          d.style.color = "var(--color2)";
+          d.style.fontWeight = "bold";
+
+        </script>
+
+        <input class = "submit" type="submit" name="submit" value="Submit Order">
+      </fieldset>
+    </form>
+
+
+  </body>
+</html>
