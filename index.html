@@ -1,82 +1,244 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- my css code -->
-    <link rel="stylesheet" href="myCSS.css" type="text/css">
-
-    <title>David Mena - Week 5 bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugs Galore</title>
+    <link rel="stylesheet" href="project2.css">
   </head>
   <body>
-    <h1 class = "bg-warning text-danger" style = "text-align: center;">Hello, world!</h1>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4 bg-dark my-bg"> Small window </div>
-        <div class="col-sm-4 bg-info"> Small window </div>
-        <div class="col-md-2 bg-secondary"> Medium Window </div>
-        <div class="col-lg-2 bg-primary"> Large Window </div>
-      </div>
-    </div>
+  <div id = "wrapper">
+    <img src ="images/logo2.png" alt = "Mug logo" class = "logoMug">
+    <h1 class = "mainTxt">Mugs Galore!</h1>
+    <h3 class = "mainTxt2">The greatest mugs around</h3>
 
-    <h1 class = "bg-warning text-danger" style = "text-align: center;"> Cards with Bootstrap</h1>
-    <br><br>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3 col-sm-6"><!-- first card -->
-          <section class = "card">
-            <a href = "https://www1.nyc.gov/site/doh/covid/covid-19-vaccines.page" target = "_blank" class = "cardLink">
-              <div class="card-body">
-                <img src = "pic1.jpg" alt = "Statue of Liberty with mask" title = "Statue of Liberty" class = "card-img img-fluid">
-                <h3 class = "card-title">COVID Vaccine</h3>
-                <p class = "card-subtitle">Safe and effective COVID-19 vaccines are available to all New Yorkers. 5 and over.</p>
-              </div>
-            </a>
-          </section>
-        </div>
-        <div class="col-md-3 col-sm-6"><!-- second card -->
-          <section class = "card">
-            <a href = "https://www1.nyc.gov/site/doh/health/health-topics/flu-seasonal.page" target = "_blank" class = "cardLink">
-              <div class="card-body">
-                <img src = "pic2.jpg" alt = "Statue of Liberty with mask" title = "Statue of Liberty" class = "card-img img-fluid">
-                <h3 class = "card-title">Get your flu vaccine, NYC!</h3>
-                <p class = "card-subtitle">With COVID-19 still around, protect yourself from getting the flue and needing medical care</p>
-              </div>
-            </a>
-          </section>
-        </div>
-        <div class="col-md-3 col-sm-6"><!-- third card -->
-          <section class = "card">
-            <a href = "https://nycwell.cityofnewyork.us/en/" target = "_blank" class = "cardLink">
-              <div class="card-body">
-                <img src = "pic3.jpg" alt = "Statue of Liberty with mask" title = "Statue of Liberty" class = "card-img img-fluid">
-                <h3 class = "card-title">NYC Well</h3>
-                <p class = "card-subtitle">Trouble coping? Don't struggle alone. We're here to listen and help with problems.</p>
-              </div>
-            </a>
-          </section>
-        </div>
-        <div class="col-md-3 col-sm-6"><!-- fourth card -->
-          <section class = "card">
-            <a href = "https://www1.nyc.gov/site/doh/health/health-topics/loneliness.page" target = "_blank" class = "cardLink">
-              <div class="card-body">
-                <img src = "pic4.jpg" alt = "Statue of Liberty with mask" title = "Statue of Liberty" class = "card-img img-fluid">
-                <h3 class = "card-title">Loneliness</h3>
-                <p class = "card-subtitle">Loneliness can cause serious health issues. Learn how you can feel more connected.</p>
-              </div>
-            </a>
-          </section>
-        </div>
+    <nav>
+      <ul>
+        <li class = "home"><a href="#">Home</a></li>
+        <li>|</li>
+        <li><a href="#title">Products</a></li>
+        <li>|</li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class = "slideshow">
+        <div class = "slide-wrapper">
+          <div class = "slide" id = "centerVert1"><span class = "span1">25% Off</span> Sitewide | This Week Only!</div>
+          <div class = "slide"><span class = "span2">Free shipping </span> when you spend <span class = "span2">$25</span> or more. | Through January 2021!</div>
+          <div class = "slide" id = "centerVert2">Buy <span class = "span1">2</span> get <span class = "span1">1</span> free | Today Only!</div>
         </div>
       </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <div class = "mainImage">
+    		<h1 class = "herotext">Choose from a variety of cool mugs below!</h1>
+		  </div>
+
+      <h1 class = "title" id = "title">Mugs</h1>
+
+      <div class = "imgCont">
+        <img src = "images/grouchMug.jpg" alt = "Oscar the Grouch Mug" title = "Oscar the Grouch Mug">
+        <hr class = "hor">
+
+        <h3 class = "description1">Oscar the Grouch Mug</h3>
+        <p><span class="descWasPrice">Was $16.99</span> <span class="descNowPrice">Now $12.74</span></p>
+
+        <a href = "#modalWindow" class = "addBut">View Item</a>
+      </div>
+
+      <!-- Modal Window -->
+      <form class="form1" action="checkout.html" method="get" id="theForm">
+        <div class = "modalBack" id = "modalWindow">
+          <div class = "modalFront">
+            <a href="#title" class = "close">&#10005;</a>
+              <div class="imgCont2">
+                <img src="images/grouchMug.jpg" alt="Oscar the Grouch Mug" title = "Oscar the Grouch Mug">
+              </div>
+              <div class="info">
+                <p id = "product">Oscar the Grouch Mug</p>
+                <p>with Cookie Holder</p>
+                <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span class = "review">10 Reviews</span></p>
+                <p>A mug based off of the sesame street character, Oscar the Grouch, with a cookie holder.</p>
+                <span class="wasPrice">Was $16.99</span> <span class="nowPrice">Now $<span id = "price">12.74</span></span>
+                <hr>
+                <!-- <a href = "#title" class = "contShop">Continue Shopping</a> -->
+
+                <input class = 'contShop' type = 'submit' value="Add to Bag" onclick = 'passvalues();'>
+
+                  <script type="text/javascript">
+
+
+                    function passvalues(){
+                      let p = document.querySelector("#product").textContent;
+                      sessionStorage.setItem("productName", p);
+
+                      let pPrice = document.querySelector("#price").textContent;
+                      sessionStorage.setItem("productPrice", pPrice);
+
+                      alert(`${p} added to bag!`);
+                    }
+                  </script>
+              </div>
+          </div>
+        </div>
+      </form>
+      <!-- Modal Window End -->
+
+      <div class = "imgCont3">
+        <img src = "images/DonutMug.jpg" alt = "Donut mug with Pipe" title = "Donut Mug with Pipe">
+        <hr class = 'hor'>
+
+        <h3 class = "description2">Donut Mug with Pipe</h3>
+        <p><span class="descWasPrice2">Was $24.99</span> <span class="descNowPrice2">Now $18.74</span></p>
+
+        <a href = "#modalWindow2" class = "addBut2">View Item</a>
+      </div>
+      <!-- Modal Window 2 -->
+      <form class="form1" action="checkout.html" method="get" id="theForm">
+        <div class = "modalBack2" id = "modalWindow2">
+          <div class = "modalFront2">
+            <a href="#title" class = "close2">&#10005;</a>
+              <div class="imgCont4">
+                <img src="images/donutMug.jpg" alt="Donut mug with a pipe" title = "Donut mug with a pipe">
+              </div>
+              <div class="info2">
+                <p id = 'product2'>Donut Mug</p>
+                <p>with Pipe</p>
+                <p>&#9733;&#9733;&#9733;&#9734;&#9734; <span class = "review2">15 Reviews</span></p>
+                <p>A mug designed to look like 3 donuts with a working pipe attached to the side of the mug.</p>
+                <span class="wasPrice2">Was $24.99</span> <span class="nowPrice2">Now $<span id = "price2">18.74</span></span>
+                <hr>
+                <!-- <a href = "#title" class = "contShop2">Continue Shopping</a> -->
+
+                <input class = 'contShop2' type = 'submit' value="Add to Bag" onclick = 'passvalues2();'>
+
+                  <script type="text/javascript">
+                    function passvalues2(){
+                      let p2 = document.querySelector("#product2").textContent;
+                      sessionStorage.setItem("productName2", p2);
+
+                      let pPrice2 = document.querySelector("#price2").textContent;
+                      sessionStorage.setItem("productPrice2", pPrice2);
+
+                      alert(`${p2} added to bag!`);
+                    }
+                  </script>
+
+              </div>
+          </div>
+        </div>
+      </form>
+      <!-- Modal Window End -->
+      <div class = "imgCont5">
+        <img src = "images/mug1.jfif" alt = "Snorlax mug" title = "Snorlax mug">
+        <hr class = 'hor'>
+
+        <h3 class = "description3">Snorlax Mug</h3>
+        <p><span class="descWasPrice3">Was $19.99</span> <span class="descNowPrice3">Now $14.99</span></p>
+
+        <a href = "#modalWindow3" class = "addBut3">View Item</a>
+      </div>
+      <!-- Modal Window 3 -->
+      <form class="form1" action="checkout.html" method="get" id="theForm">
+        <div class = "modalBack3" id = "modalWindow3">
+          <div class = "modalFront3">
+            <a href="#title" class = "close3">&#10005;</a>
+              <div class="imgCont6">
+                <img src="images/mug1.jfif" alt = "Snorlax mug" title = "Snorlax mug">
+              </div>
+              <div class="info3">
+                <p id = "product3">Snorlax Mug</p>
+                <p>from Pokémon</p>
+                <p>&#9733;&#9733;&#9733;&#9733;&#9734; <span class = "review3">23 Reviews</span></p>
+                <p>A mug made to look like the lovable and always sleeping Snorlax from the popular video game series, Pokémon!</p>
+                <span class="wasPrice3">Was $19.99</span> <span class="nowPrice3">Now $<span id = "price3">14.99</span></span>
+                <hr>
+                <!-- <a href = "#title" class = "contShop3">Continue Shopping</a> -->
+
+                <input class = 'contShop3' type = 'submit' value="Add to Bag" onclick = 'passvalues3();'>
+
+                  <script type="text/javascript">
+                    function passvalues3(){
+                      let p3 = document.querySelector("#product3").textContent;
+                      sessionStorage.setItem("productName3", p3);
+
+                      let pPrice3 = document.querySelector("#price3").textContent;
+                      sessionStorage.setItem("productPrice3", pPrice3);
+
+                      alert(`${p3} added to bag!`);
+                    }
+                  </script>
+
+              </div>
+          </div>
+        </div>
+      </form>
+      <!-- Modal Window End -->
+
+      <!-- Contact Information -->
+
+      <div class = "logos" id = "contact">
+        <h3>Connect with Mugs Galore!<h3>
+
+        <a href = "https://www.facebook.com/david.mena.526" target = "_blank"><img src = "images/facebook2.png" alt="Connect to facebook" title="Connect to facebook" width = "50px" height = "50px"></a>
+        <a href="https://www.instagram.com/david_m3na/" target = "_blank"><img src = "images/instagram2.png" alt="Connect to instagram" title="Connect to instagram" width = "50px" height = "50px"></a>
+        <a href="https://www.linkedin.com/in/david-mena-9084b7170" target = "_blank"><img src = "images/linkedin2.png" alt="Connect to LinkedIn" title="Connect to LinkedIn" width = "50px" height = "50px"></a>
+        <a href="https://twitter.com/davidmena123910" target = "_blank"><img src = "images/twitter2.png" alt="Connect to Twitter" title="Connect to Twitter" width = "50px" height = "50px"></a>
+        <a href="https://www.youtube.com/" target = "_blank"><img src = "images/youtube2.png" alt="Connect to Youtube" title = "Connect to Youtube" width = "50px" height = "50px"></a>
+      </div>
+
+      <!-- JS Part -->
+      <!-- <div>
+        <a href = "#modalWindowV" class = "addButV">View Item</a>
+      </div> -->
+      <!-- Modal Window Valentine's Day -->
+        <div class = "modalBackV" id = "modalWindowV">
+          <div class = "modalFrontV">
+            <a href="#title" class = "closeV" onclick = "closeVal();"
+>&#10005;</a>
+              <div class="imgContV">
+                <img src="images/valentines.jpeg" alt="Valentine's Day Sale" title = "Valentine's Day Sale">
+              </div>
+              <div class="infoV">
+                <p>Valentine's Day SALE!</p>
+                <p>NEXT WEEK</p>
+                <p>Take <span class = "all">25%</span> off <span class = "all">ALL MUGS</span> next week from 02/13/22 - 02/19/22</p>
+                <hr>
+                <a href = "#title" class = "contShopV">Continue Shopping</a>
+              </div>
+          </div>
+        </div>
+      <!-- <div class="toTop">
+        <a href="#" class = "linkTop">&#x261D; <br> To Top</a>
+      </div> -->
+
+      <!-- <script type="text/javascript">
+        let topIcon = document.querySelector('.modalBackV');
+        let pageTopLoc;
+
+        function closeVal(){
+          topIcon.style.display = "none";
+          // topIcon.style.opacity = 0;
+        }
+
+        window.addEventListener('scroll', function(){
+          "use strict";
+          pageTopLoc = window.scrollY;
+
+          if(pageTopLoc > 250){
+              topIcon.style.display = "block";
+          }
+          else{
+            topIcon.style.display = "none";
+          }
+        });
+      </script> -->
+
+    </main>
+
+    <br>
+    <footer> &copy; 2022 Mugs Galore! by David Mena. All Rights Reserved. </footer>
+  </div>
   </body>
 </html>
